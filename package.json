@@ -1,0 +1,13 @@
+{
+  "name": "telegram-video-editor-platform-tooling",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "pipeline:dry-run": "npm --prefix pipeline-ui run dry-run",
+    "pipeline:build": "npm --prefix pipeline-ui run build",
+    "cf:worker:dev": "npm --prefix cloudflare/worker run dev",
+    "cf:worker:deploy": "npm --prefix cloudflare/worker run deploy",
+    "cf:pages:dev": "npm --prefix webApp run pages:dev",
+    "cf:pages:deploy": "npm --prefix webApp run pages:deploy"
+  }
+}
