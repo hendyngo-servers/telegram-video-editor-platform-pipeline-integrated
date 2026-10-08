@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "video-subtitle-api",
+  "name": "telegram-video-editor-platform-pipeline-integrated",
   "main": "./src/index.ts",
   "compatibility_date": "2026-10-08",
   "workers_dev": true,
@@ -15,11 +15,18 @@
     "WEB_APP_URL": "https://tma.example.com/"
   },
   "r2_buckets": [
-    { "binding": "PIPELINE_LOGS", "bucket_name": "video-pipeline-logs" }
+    {
+      "binding": "PIPELINE_LOGS",
+      "bucket_name": "video-pipeline-logs"
+    }
   ],
   "kv_namespaces": [
-    { "binding": "BOT_STATE", "id": "REPLACE_WITH_KV_NAMESPACE_ID" },
-    { "binding": "CONFIG_SOT", "id": "REPLACE_WITH_SOT_KV_NAMESPACE_ID" }
+    {
+      "binding": "BOT_STATE"
+    },
+    {
+      "binding": "CONFIG_SOT"
+    }
   ],
   "secrets": {
     "required": [
